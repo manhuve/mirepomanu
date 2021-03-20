@@ -13,7 +13,8 @@ class UserCard extends StatelessWidget {
 
     final userInfo = Container(
       margin: EdgeInsets.only(
-          left: 20.0
+          left: 20.0,
+          right:20.0,
       ),
 
       child: Text(
@@ -55,7 +56,7 @@ class UserCard extends StatelessWidget {
       ],
     );
 
-    final photo = Container (
+    final photo = Container(
       margin: EdgeInsets.only(
           top: 0.0,
           left: 20.0
@@ -73,6 +74,24 @@ class UserCard extends StatelessWidget {
 
     );
 
+    final icono = Container (
+      margin: EdgeInsets.only(
+          top: 20,
+          left: 30
+      ),
+        height: 40.0,
+        width: 40.0,
+        child: FloatingActionButton(
+          onPressed: () {
+            // Add your onPressed code here!
+          },
+          child: const Icon(Icons.mail),
+          backgroundColor: Colors.red,
+        ),
+    );
+
+
+
     return Container(
       margin: EdgeInsets.only(
         top: 0.0,
@@ -84,7 +103,7 @@ class UserCard extends StatelessWidget {
       children: [
         photo,
         userDetails,
-        //ICONO
+        icono
     ],
     )
 
