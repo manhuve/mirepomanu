@@ -4,6 +4,48 @@ import 'card_user.dart';
 void main() {
   runApp(MyApp());
 }
+/*
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new MaterialApp(
+      home: new MyHomePage(),
+    );
+
+  }
+}*/
+class MyHomePage extends StatefulWidget{
+
+  @override
+  _MyHomePageState createState() => new _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+      appBar: new AppBar(
+          title: new Text('Menu')
+      ),
+      drawer: new Drawer(
+        child: ListView(
+          children: <Widget>[
+            new UserAccountsDrawerHeader(
+              accountName: new Text('Liz'),
+              accountEmail: new Text('Liz.js@hotmail.com'),
+              currentAccountPicture: new CircleAvatar(
+                backgroundImage: new NetworkImage('https://i.pravatar.cc/300'),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -18,6 +60,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: ListView(
           children: [
+            Image(
+              image: AssetImage('Back_liz.jpg'),
+            ),
             UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
             UserCard("asset/user3.jpg", "Menganito Perez", "Experiencia 01 Años"),
             UserCard("asset/user4.jpg", "Pablo Lopez", "Experiencia 09 Años"),
@@ -28,6 +73,7 @@ class MyApp extends StatelessWidget {
             UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
             UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
           ]
+
         )
       ),
     );
