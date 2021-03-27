@@ -4,7 +4,7 @@ import 'card_user.dart';
 void main() {
   runApp(MyApp());
 }
-/*
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     );
 
   }
-}*/
+}
 class MyHomePage extends StatefulWidget{
 
   @override
@@ -27,9 +27,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      appBar: new AppBar(
+      /*appBar: new AppBar(
           title: new Text('Menu')
-      ),
+      ),*/
       drawer: new Drawer(
         child: ListView(
           children: <Widget>[
@@ -37,16 +37,37 @@ class _MyHomePageState extends State<MyHomePage> {
               accountName: new Text('Liz'),
               accountEmail: new Text('Liz.js@hotmail.com'),
               currentAccountPicture: new CircleAvatar(
-                backgroundImage: new NetworkImage('https://i.pravatar.cc/300'),
+                backgroundImage: new AssetImage('asset/lizbeth.jpg'),
               ),
             )
           ],
         ),
       ),
+      body: Stack (
+          children: [
+            ListView(
+            children: [
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/user3.jpg", "Menganito Perez", "Experiencia 01 Años"),
+              UserCard("asset/user4.jpg", "Pablo Lopez", "Experiencia 09 Años"),
+              UserCard("asset/chem1.jpg", "Roberto Carlos", "Experiencia 03 Años"),
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+            ]
+            ),
+            Image(
+              image: AssetImage('asset/beach.jpeg'),
+            ),
+           ]
+        ),
+
     );
   }
 }
-
+/*
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -79,4 +100,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+*/
