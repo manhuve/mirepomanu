@@ -58,8 +58,16 @@ class _MyHomePageState extends State<MyHomePage> {
               UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
             ]
             ),
-            Image(
-              image: AssetImage('asset/beach.jpeg'),
+            Container(
+              height: 150.0,
+              width: 900.0,
+              decoration: BoxDecoration (
+                image: DecorationImage(
+                  image: AssetImage('asset/Back_liz.jpg'),
+                  fit: BoxFit.cover,
+                  alignment: Alignment.topRight,
+                ),
+              )
             ),
            ]
         ),
