@@ -34,10 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: new Text('Liz'),
-              accountEmail: new Text('Liz.js@hotmail.com'),
+              accountName: new Text('Bugha'),
+              accountEmail: new Text('Kyle Giersdorf'),
               currentAccountPicture: new CircleAvatar(
-                backgroundImage: new AssetImage('asset/lizbeth.jpg'),
+                backgroundImage: new AssetImage('asset/bugha.png'),
               ),
             )
           ],
@@ -46,24 +46,25 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack (
           children: [
             ListView(
+              padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
             children: [
-              UserCard("Pastel01.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("Pastel02.jpg", "Menganito Perez", "Experiencia 01 Años"),
-              UserCard("Pastel03.jpg", "Pablo Lopez", "Experiencia 09 Años"),
-              UserCard("Pastel04.jpg", "Roberto Carlos", "Experiencia 03 Años"),
-              UserCard("Pastel05.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("Pastel06.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("Pastel07.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("Pastel08.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("Pastel09.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("asset/skin01.jpg", "Ultima Knight", "2000 v-bucks"),
+              UserCard("asset/skin02.jpg", "Eternal Voyager", "1500 v-bucks"),
+              UserCard("asset/skin03.png", "Bubble Bomber", "1000 v-bucks"),
+              UserCard("asset/skin04.png", "Lizzie", "2000 v-bucks"),
+              UserCard("asset/skin05.jpg", "Skull trooper", "1500 v-bucks"),
+              UserCard("asset/skin06.png", "Valentine", "2000 v-bucks"),
+              UserCard("asset/skin07.jpg", "Bananin", "1500 v-bucks"),
+              UserCard("asset/skin08.jpg", "Travis Scott", "2000 v-bucks"),
+              UserCard("asset/skin09.png", "Baby Beli", "Limited edition"),
             ]
             ),
             Container(
-              height: 150.0,
-              width: 900.0,
+              height: 150,
+              width: 500,
               decoration: BoxDecoration (
                 image: DecorationImage(
-                  image: AssetImage('asset/barritaarriba.png'),
+                  image: AssetImage('asset/barrita2.png'),
                   fit: BoxFit.cover,
                   alignment: Alignment.topRight,
                 ),

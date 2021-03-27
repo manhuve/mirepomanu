@@ -77,7 +77,7 @@ class UserCard extends StatelessWidget {
     final icono = Container (
       margin: EdgeInsets.only(
           top: 20,
-          left: 30
+          left: 50,
       ),
         height: 40.0,
         width: 40.0,
@@ -85,8 +85,8 @@ class UserCard extends StatelessWidget {
           onPressed: () {
             // Add your onPressed code here!
           },
-          child: const Icon(Icons.mail),
-          backgroundColor: Colors.red,
+          child: const Icon(Icons.payment),
+          backgroundColor: Color.fromRGBO(239, 195, 74, 1),
         ),
     );
 
