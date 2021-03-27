@@ -47,15 +47,15 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             ListView(
             children: [
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("asset/user3.jpg", "Menganito Perez", "Experiencia 01 Años"),
-              UserCard("asset/user4.jpg", "Pablo Lopez", "Experiencia 09 Años"),
-              UserCard("asset/chem1.jpg", "Roberto Carlos", "Experiencia 03 Años"),
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
-              UserCard("asset/chem1.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel01.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel02.jpg", "Menganito Perez", "Experiencia 01 Años"),
+              UserCard("Pastel03.jpg", "Pablo Lopez", "Experiencia 09 Años"),
+              UserCard("Pastel04.jpg", "Roberto Carlos", "Experiencia 03 Años"),
+              UserCard("Pastel05.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel06.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel07.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel08.jpg", "Amanda Murphy", "Experiencia 04 Años"),
+              UserCard("Pastel09.jpg", "Amanda Murphy", "Experiencia 04 Años"),
             ]
             ),
             Container(
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 900.0,
               decoration: BoxDecoration (
                 image: DecorationImage(
-                  image: AssetImage('asset/Back_liz.jpg'),
+                  image: AssetImage('asset/barritaarriba.png'),
                   fit: BoxFit.cover,
                   alignment: Alignment.topRight,
                 ),
